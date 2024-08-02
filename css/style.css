@@ -4206,7 +4206,7 @@ ul.disc.disc li:before {
 .btn-1 {
     display: inline-block;
     height: auto;
-    padding: 20px 50px;
+    padding: 10px 10px;
     border: 2px solid #dc2751;
     border-radius: 80px;
     background-color: #dc2751;
@@ -4802,6 +4802,28 @@ transform: translateY(-50%);
 div a {
     text-decoration: none;
     margin: 0 10px;
-    color: #333; /* 颜色可以自行调整 */
-    font-size: 24px; /* 图标大小 */
+    color: #333;
+    font-size: 24px;
+}
+/* styles.css */
+
+.whatsapp-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+    background-color: #1EBE50;
+}
+.whatsapp-icon:hover {
+    background-color: #1EBE50;
 }

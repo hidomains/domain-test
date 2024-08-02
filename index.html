@@ -5,12 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The domain is for sale.</title>
-    <link rel="icon" type="image/png" href="images/favicon.jpg" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Hind&family=Poppins:wght@400;500;600;700;800;900&display=swap">
     <link rel="stylesheet" href="css/plugins.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QBXRKR0R9R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QBXRKR0R9R');
+    </script>
 </head>
 <body>
     <!-- Preloader -->
@@ -20,47 +27,45 @@
             <div class="preloader-position loader"> <span></span> </div>
         </div>
     </div>
-    <!-- Progress scroll totop -->
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <!-- Logo -->
             <div class="logo-wrapper">
-                <a class="logo" href="index.html"> <img src="images/logo-light.png" class="logo-img" alt="logo-img"> </a>
-                <!-- <a href="index.html" class="logo"><h2>Acens<span>.</span></h2></a> -->
+                <a class="logo" href="https://58name.com"> 
+                    <img src="images/logo-light.png" class="logo-img" alt="Hi.Casino logo"> 
+                </a>
             </div>
-            <!-- Button -->
-        
             <!-- Menu -->
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ms-auto">
-                        </div>
-                    </div>
-                </div>
+                    <!-- Menu items can be added here -->
+                </ul>
             </div>
         </div>
     </nav>
+
     <!-- Kenburns SlideShow -->
     <aside class="kenburns-section" id="kenburnsSliderContainer" data-overlay-dark="6">
         <div class="kenburns-inner h-100">
             <div class="v-middle caption">
                 <div class="container">
                     <div class="row h-100 justify-content-center">
-                            <div class="col-md-12 text-center mt-60">
-                                <h2>Block.Link</h2>
-                                <p>This is a premium blockchain domain. For sale...</p> 
-                                <a href="mailto:info@58name.com" target="_blank" class="btn-1 mt-15">Contact US</a>
-                                <a href="https://x.com/58name_com" target="_blank"><i class="fab fa-twitter"></i></a>
-                                </div>
-                            </div>
+                        <div class="col-md-12 text-center mt-60">
+                            <h2 id="domainName"></h2>
+                            <p>This is a premium domain, currently for sale...</p> 
+                            <a href="mailto:info@58name.com" target="_blank" class="btn-1 mt-15">Contact US</a>
+                            <a href="https://wa.me/85292764588?text=Hello!%0AWe%20provide%20domain%20name%20sales%20services.%20If%20you%20are%20interested%20in%20any%20domain%20name,%20please%20tell%20us:%20domain%20name%20and%20quotation." class="whatsapp-icon" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            <a href="https://x.com/58name_com" target="_blank"><i class="fab fa-twitter"></i></a>
+                            </a>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
     </aside>
-
-    </section>
 
     <!-- jQuery -->
     <script src="js/jquery-3.7.1.min.js"></script>
@@ -81,13 +86,12 @@
     <script src="js/wow.js"></script>
     <script src="js/vegas.slider.min.js"></script>
     <script src="js/custom.js"></script>
+
     <!-- Vegas Background Slideshow (vegas.slider kenburns) -->
     <script>
         $(document).ready(function() {
             $('#kenburnsSliderContainer').vegas({
-                slides: [{
-                    src: "images/slider/img.avif"
-                }],
+                slides: [{ src: "images/slider/4.webp" }],
                 overlay: true,
                 transition: 'fade2',
                 animation: 'kenburnsUpRight',
@@ -95,6 +99,19 @@
                 delay: 10000,
                 animationDuration: 20000
             });
+
+            // JavaScript to set domain name
+            function formatDomain(domain) {
+                return domain.charAt(0).toUpperCase() + domain.slice(1);
+            }
+
+            function setDomainName() {
+                var domain = window.location.hostname;
+                var domainName = formatDomain(domain);
+                document.getElementById('domainName').textContent = domainName;
+            }
+
+            setDomainName();
         });
     </script>
 </body>
