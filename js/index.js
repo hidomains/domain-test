@@ -136,3 +136,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // You can open the form popup by calling openForm() function from elsewhere
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); // 防止表单默认提交行为
+
+        // 提交表单数据
+        fetch(form.action, {
+            method: "POST",
+            body: new FormData(form),
+        })
+        .then(response => response.json())
+        .then(data => {
+            // 显示成功消息
+            alert("Message sent successfully!");
+            // 关闭表单弹窗
+            document.getElementById("buyNowForm").style.display = "none";
+        })
+        .catch(error => {
+            // 显示错误消息
+            alert("There was an error sending your message.");
+        });
+    });
+});
