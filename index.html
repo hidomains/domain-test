@@ -55,17 +55,59 @@
                         <div class="col-md-12 text-center mt-60">
                             <h2 id="domainName"></h2>
                             <p>This is a premium domain, currently for sale...</p> 
-                            <a href="mailto:info@58name.com" target="_blank" class="btn-1 mt-15">Contact US</a>
-                            <a href="https://wa.me/85292764588?text=Hello!%0AWe%20provide%20domain%20name%20sales%20services.%20If%20you%20are%20interested%20in%20any%20domain%20name,%20please%20tell%20us:%20domain%20name%20and%20quotation." class="whatsapp-icon" target="_blank">
-                                <i class="fab fa-whatsapp"></i>
-                            <a href="https://x.com/58name_com" target="_blank"><i class="fab fa-twitter"></i></a>
-                            </a>
+                            <a href="#" id="buyNowButton" class="btn-2 mt-15">Make Offer</a>
+                            <div style="margin-top: 20px;"></div>
+                            <div class="social-links">
+                                <a href="https://wa.me/85292764588?text=Hello!%0AWe%20provide%20domain%20name%20sales%20services.%20If%20you%20are%20interested%20in%20any%20domain%20name,%20please%20tell%20us:%20domain%20name%20and%20quotation." class="whatsapp-icon" target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="https://x.com/58name_com" target="_blank">
+                                    <i class="fa-brands fa-twitter style-white"></i>
+                                </a>
+                                <a href="mailto:info@58name.com" class="email-icon" target="_blank">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </aside>
+    
+<!-- Form Popup -->
+<div id="buyNowForm" class="form-popup">
+    <div class="form-popup-content">
+        <span class="close-btn">&times;</span>
+        <h2>Contact Us</h2>
+        <form id="contactForm" action="process_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="price">Price Quote:</label>
+            <input type="text" id="price" name="price" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn-submit">Send</button>
+        </form>
+    </div>
+</div>
+
+<!-- Success Message Popup -->
+<div id="successPopup" class="success-popup">
+    <div class="success-popup-content">
+        <p>Your message has been sent successfully!</p>
+        <button class="btn-submit" onclick="closeSuccessPopup()">Close</button>
+    </div>
+</div>
 
     <!-- jQuery -->
     <script src="js/jquery-3.7.1.min.js"></script>
@@ -86,33 +128,6 @@
     <script src="js/wow.js"></script>
     <script src="js/vegas.slider.min.js"></script>
     <script src="js/custom.js"></script>
-
-    <!-- Vegas Background Slideshow (vegas.slider kenburns) -->
-    <script>
-        $(document).ready(function() {
-            $('#kenburnsSliderContainer').vegas({
-                slides: [{ src: "images/slider/4.webp" }],
-                overlay: true,
-                transition: 'fade2',
-                animation: 'kenburnsUpRight',
-                transitionDuration: 1000,
-                delay: 10000,
-                animationDuration: 20000
-            });
-
-            // JavaScript to set domain name
-            function formatDomain(domain) {
-                return domain.charAt(0).toUpperCase() + domain.slice(1);
-            }
-
-            function setDomainName() {
-                var domain = window.location.hostname;
-                var domainName = formatDomain(domain);
-                document.getElementById('domainName').textContent = domainName;
-            }
-
-            setDomainName();
-        });
-    </script>
+    <script src="js/index.js"></script>
 </body>
 </html>

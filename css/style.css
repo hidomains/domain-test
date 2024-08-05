@@ -262,7 +262,7 @@ input[type="checkbox"] {
 .v-middle {
     position: absolute;
     width: 100%;
-    top: 40%;
+    top: 60%;
     left: 0;
     -webkit-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
@@ -4822,8 +4822,288 @@ div a {
 }
 
 .whatsapp-icon:hover {
-    background-color: #1EBE50;
+    background-color: #dc4416;
 }
 .whatsapp-icon:hover {
-    background-color: #1EBE50;
+    background-color: #e33e24;
+}
+.style-white {
+    color: #FFFFFF;
+  }
+  .btn-small {
+    font-size: 0.5em; /* 将按钮字体缩小一半 */
+    padding: 5px 10px; /* 调整内边距 */
+}
+
+.btn-2 {
+    background-color: #da2424; /* 设置背景颜色 */
+    color: #fff; /* 设置文字颜色 */
+    padding: 10px 20px; /* 调整内边距 */
+    border-radius: 5px; /* 圆角边框 */
+    text-decoration: none; /* 去掉下划线 */
+    margin-top: 30px; /* 上边距，调整与社交媒体图标的距离 */
+    display: inline-block; /* 让按钮与文本行内对齐 */
+}
+
+.social-links {
+    margin-top: 50px; /* 调整社交媒体图标的上边距，确保它们与其他元素有足够的间距 */
+}
+
+.social-links a {
+    color: #fff; /* 设置图标颜色 */
+    font-size: 24px; /* 设置图标大小 */
+    margin: 0 10px; /* 设置图标间距 */
+    text-decoration: none; /* 去掉下划线 */
+}
+
+.social-links a:hover {
+    color: #ccc; /* 鼠标悬停时的图标颜色 */
+}
+
+/* Form Popup */
+.form-popup {
+    display: none; /* 默认隐藏 */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.form-popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    color: #333; /* 深色字体 */
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff !important; /* 强制设置背景色为白色 */
+    color: #333; /* 输入框字体颜色 */
+    box-shadow: none; /* 去除框标 */
+    outline: none; /* 去除输入框的轮廓 */
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #ddd; /* 输入框焦点边框颜色（保持原样） */
+    box-shadow: none; /* 去除焦点状态下的框标 */
+}
+
+/* 设置电话输入框的背景颜色 */
+input[type="tel"] {
+    background-color: #f9f9f9; /* 电话输入框背景色，和其他输入框一致 */
+}
+
+.btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}
+
+/* Form Popup */
+.form-popup {
+    display: none; /* 默认隐藏 */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.form-popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: black;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: none;
+    outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #ddd;
+    box-shadow: none;
+}
+
+.btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}
+
+/* Success Message Popup */
+.success-popup {
+    display: none; /* 默认隐藏 */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.success-popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: center;
+}
+/* Form Popup */
+.form-popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 9999; /* Sit on top */
+}
+
+/* Form Popup Content */
+.form-popup-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px; /* Optional: Set a max-width */
+}
+
+/* Close Button */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form Inputs */
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+.btn-submit {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #004494;
 }
