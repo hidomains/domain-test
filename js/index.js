@@ -46,7 +46,7 @@ $(document).ready(function() {
         $('#modalTitle').text(domain);
 
         var message = `
-            <p>1: <a href="https://dan.com" target="_blank">${domain}</a> is a premium domain and is currently for sale. To purchase the domain, please use the "Buy Now" button and complete the process through Dan.com. The domain will be delivered to you within 24 hours.</p>
+            <p>1: <a href="https://dan.com" target="_blank">${domain}</a> is a premium domain and is currently for sale. To purchase the domain, please use the "Buy Now" button and complete the process through <a href="https://dan.com" target="_blank">Dan.com</a>. The domain will be delivered to you within 24 hours.</p>
             <p>2: This domain supports installment payments - pay first and buy later. Custom payment terms are available, with a maximum term of 12 installments.</p>
         `;
         $('#modalMessage').html(message);
