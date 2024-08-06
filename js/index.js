@@ -53,7 +53,7 @@ $(document).ready(function() {
 
 
         var price = "$5000";
-        $('#priceLabel').text("价格: " + price);
+        $('#priceLabel').text("Price: " + price);
 
         modal.show();
     });
