@@ -51,8 +51,8 @@ $(document).ready(function() {
         `;
         $('#modalMessage').html(message);
 
-        // 设置价格标签和立即购买按钮
-        var price = "$5000"; // 示例价格，你可以根据需要修改
+
+        var price = "$5000";
         $('#priceLabel').text("价格: " + price);
 
         modal.show();
