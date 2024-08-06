@@ -46,8 +46,8 @@ $(document).ready(function() {
         $('#modalTitle').text(domain);
 
         var message = `
-            <p>1: <a href="https://dan.com" target="_blank">${domain}</a> 是一个高级域名，正在出售中。要购买域名，请使用“立即购买”按钮并通过 <a href="https://dan.com" target="_blank">DAN.com</a> 完成流程。域名将在 24 小时内交付给您。</p>
-            <p>2: 此域名支持分期付款-先祖后买方式。自定义期限，最大支持期限为12期。</p>
+            <p>1: <a href="https://dan.com" target="_blank">${domain}</a> is a premium domain and is currently for sale. To purchase the domain, please use the "Buy Now" button and complete the process through <a href="https://dan.com" target="_blank">DAN.com</a>. The domain will be delivered to you within 24 hours.</p>
+            <p>2: This domain supports installment payments - pay first and buy later. Custom payment terms are available, with a maximum term of 12 installments.</p>
         `;
         $('#modalMessage').html(message);
 
