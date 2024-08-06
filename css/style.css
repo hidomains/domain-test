@@ -4860,250 +4860,135 @@ div a {
     color: #ccc; /* 鼠标悬停时的图标颜色 */
 }
 
-/* Form Popup */
-.form-popup {
-    display: none; /* 默认隐藏 */
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.form-popup-content {
-    background-color: #fff;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
-    border-radius: 10px;
-}
-
-.close-btn {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close-btn:hover,
-.close-btn:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-form label {
-    display: block;
-    margin-top: 10px;
-    color: #333; /* 深色字体 */
-}
-
-form input,
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 15px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #fff !important; /* 强制设置背景色为白色 */
-    color: #333; /* 输入框字体颜色 */
-    box-shadow: none; /* 去除框标 */
-    outline: none; /* 去除输入框的轮廓 */
-}
-
-form input:focus,
-form textarea:focus {
-    border-color: #ddd; /* 输入框焦点边框颜色（保持原样） */
-    box-shadow: none; /* 去除焦点状态下的框标 */
-}
-
-/* 设置电话输入框的背景颜色 */
-input[type="tel"] {
-    background-color: #f9f9f9; /* 电话输入框背景色，和其他输入框一致 */
-}
-
-.btn-submit {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn-submit:hover {
-    background-color: #45a049;
-}
-
-/* Form Popup */
-.form-popup {
-    display: none; /* 默认隐藏 */
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.form-popup-content {
-    background-color: #fff;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
-    border-radius: 10px;
-    position: relative;
-}
-
-.close-btn {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close-btn:hover {
-    color: black;
-}
-
-form label {
-    display: block;
-    margin-top: 10px;
-    color: #333;
-}
-
-form input,
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 15px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #fff;
-    color: #333;
-    box-shadow: none;
-    outline: none;
-}
-
-form input:focus,
-form textarea:focus {
-    border-color: #ddd;
-    box-shadow: none;
-}
-
-.btn-submit {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn-submit:hover {
-    background-color: #45a049;
-}
-
-/* Success Message Popup */
-.success-popup {
-    display: none; /* 默认隐藏 */
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.success-popup-content {
-    background-color: #fff;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 400px;
-    border-radius: 10px;
-    text-align: center;
-}
-/* Form Popup */
-.form-popup {
+/* Modal Styles */
+.modal {
     display: none; /* Hidden by default */
-    position: fixed;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-    z-index: 9999; /* Sit on top */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Form Popup Content */
-.form-popup-content {
-    background-color: white;
-    margin: 15% auto;
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
-    max-width: 600px; /* Optional: Set a max-width */
 }
 
-/* Close Button */
-.close-btn {
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.close-btn:hover,
-.close-btn:focus {
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
 }
 
-/* Form Inputs */
-form label {
-    display: block;
+/* Modal message styles */
+.modal-message {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: flex-start; /* Align items to the left */
+    gap: 10px; /* Space between lines */
+}
+
+/* Add specific styles for the list items */
+.modal-message p {
+    margin: 0; /* Remove default margin */
+}
+
+.modal-message a {
+    color: #FF0000; /* Red color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.modal-message a:hover {
+    color: #CC0000; /* Darker red for hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+/* 通用字体颜色 */
+body, h1, h2, h3, h4, h5, h6, p {
+    color: #333333; /* 深黑色 */
+}
+
+/* 链接颜色 */
+a {
+    color: #FF0000; /* 红色 */
+    text-decoration: none; /* 去掉下划线 */
+}
+
+/* 链接悬停颜色 */
+a:hover, a:focus {
+    color: #CC0000; /* 更深的红色，鼠标悬停时的颜色 */
+    text-decoration: underline; /* 悬停时添加下划线 */
+}
+
+/* Modal footer styles */
+.modal-footer {
+    margin-top: 20px;
+    text-align: left; /* Align items to the left */
+}
+
+#priceLabel {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#buyNowButtonFooter {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #FF0000; /* 红色背景 */
+    text-decoration: none;
+    border-radius: 5px;
     margin-top: 10px;
 }
 
-form input,
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+#buyNowButtonFooter:hover {
+    background-color: #CC0000; /* 更深的红色 */
 }
 
-form input:focus,
-form textarea:focus {
-    border-color: #0056b3;
-    outline: none;
+.footer-note {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #333;
 }
 
-.btn-submit {
-    background-color: #0056b3;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.footer-note img {
+    vertical-align: middle;
+    height: 20px; /* Adjust as needed */
+    margin-left: 10px;
+}
+/* 模态框底部 */
+.modal-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
 }
 
-.btn-submit:hover {
-    background-color: #004494;
+/* 安全交易文本 */
+.modal-footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #444;
+}
+
+/* LOGO 图像 */
+.modal-footer img {
+    max-width: 100px; /* 可以调整为合适的最大宽度 */
+    height: auto;
 }
