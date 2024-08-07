@@ -4992,3 +4992,115 @@ a:hover, a:focus {
     max-width: 100px; /* 可以调整为合适的最大宽度 */
     height: auto;
 }
+
+/* 样式用于 modal 的背景 */
+.modal {
+    display: none; /* 默认不显示 */
+    position: fixed; /* 固定定位 */
+    z-index: 1000; /* 确保 modal 在其他内容之上 */
+    left: 0;
+    top: 0;
+    width: 100%; /* 使 modal 宽度占满整个屏幕 */
+    height: 100%; /* 使 modal 高度占满整个屏幕 */
+    overflow: auto; /* 允许内容溢出时滚动 */
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+}
+
+/* 样式用于 modal 的内容 */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* 垂直方向上距屏幕顶部 15%，水平居中 */
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%; /* 可调整宽度 */
+    max-width: 500px; /* 设置最大宽度 */
+}
+
+/* 样式用于关闭按钮 */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 样式用于 modal 的 footer 部分 */
+.modal-footer {
+    margin-top: 20px;
+}
+
+/* 样式用于 footer-note */
+.footer-note {
+    font-size: 14px;
+    color: #444;
+}
+
+/* 确保图片自动缩放 */
+.footer-note img {
+    max-height: 20px; /* 根据需要调整 */
+    vertical-align: middle;
+}
+
+/* 样式用于 modal 的背景 */
+.modal {
+    display: none; /* 默认不显示 */
+    position: fixed; /* 固定定位 */
+    z-index: 1000; /* 确保 modal 在其他内容之上 */
+    left: 0;
+    top: 0;
+    width: 100%; /* 使 modal 宽度占满整个屏幕 */
+    height: 100%; /* 使 modal 高度占满整个屏幕 */
+    overflow: auto; /* 允许内容溢出时滚动 */
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+}
+
+/* 样式用于 modal 的内容 */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* 垂直方向上距屏幕顶部 15%，水平居中 */
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%; /* 可调整宽度 */
+    max-width: 500px; /* 设置最大宽度 */
+}
+
+/* 样式用于关闭按钮 */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 样式用于 modal 的 footer 部分 */
+.modal-footer {
+    margin-top: 20px;
+}
+
+/* 样式用于 footer-note */
+.footer-note {
+    display: flex; /* 使用 flexbox 布局 */
+    align-items: center; /* 垂直居中对齐 */
+    font-size: 14px;
+    color: #444;
+}
+
+.footer-note img {
+    max-height: 20px; /* 根据需要调整 */
+    margin-left: 10px; /* 图标与文字之间的间距 */
+    vertical-align: middle; /* 垂直对齐 */
+}

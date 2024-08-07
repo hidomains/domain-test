@@ -68,3 +68,23 @@ $(document).ready(function() {
         }
     });
 });
+
+var modal = document.getElementById('offerModal');
+var span = document.getElementsByClassName('close')[0];
+
+// 打开 modal
+function openModal() {
+    modal.style.display = 'block';
+}
+
+// 关闭 modal
+span.onclick = function() {
+    modal.style.display = 'none';
+}
+
+// 点击背景关闭 modal
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
